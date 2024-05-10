@@ -1,5 +1,8 @@
 <script>
   import Navigation from "$lib/Navigation.svelte";
+  import New from "$lib/New.svelte";
+  import MultipleNew from "$lib/MultipleNew.svelte";
+  import ThumbNew from "$lib/ThumbNew.svelte";
 
 
 </script>
@@ -21,7 +24,8 @@
     .main-container{
         width: 70%;
         background-color: aqua;
-        margin: 20px auto;
+        margin: 30px auto;
+        padding: 10px;
 
     }
 
@@ -30,6 +34,23 @@
         justify-content: space-between;
     }
 
+    .body-container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+    .body-container > div {
+            flex: 1; 
+        }
+
+    .body-container > div:nth-child(1) {
+            flex: 2; 
+        }
+
+    .body-container2 {
+            display: flex;
+        }
+
 </style>
 
 <body>
@@ -37,6 +58,19 @@
         <div class="header">
             <img src="/logo.svg" alt="logo"/>
             <Navigation/>
+        </div>
+        <div class="body-container">
+            <div>
+                <New/>
+            </div> 
+            <div>
+                <MultipleNew />
+            </div>   
+        </div>
+        <div class="body-container2">
+            <ThumbNew />
+            <ThumbNew/>
+            <ThumbNew/>
         </div>
     </div>
     
