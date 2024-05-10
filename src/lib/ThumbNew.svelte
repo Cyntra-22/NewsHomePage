@@ -6,13 +6,21 @@
         display: flex;
         padding: 10px;
     }
-    
+    h1{
+        color: var(--font-color);
+    }
+    p{
+        color: var(--text-color);
+    }
     .news-content{
         padding: 10px;
     }
+
 </style>
 <div class="thumb-new-container">
-    <img src="/image-gaming-growth.jpg" alt="new title"/>
+    <div>
+        <img src="/image-gaming-growth.jpg" alt="new title"/>
+    </div>
     <div class="news-content">
         <h1>01</h1>
         <h2>Reviving Retro PCs</h2>

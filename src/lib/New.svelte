@@ -12,6 +12,14 @@
         align-items: center;
     }
 
+    button{
+        background-color: var(--button-color);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
     
 </style>
 

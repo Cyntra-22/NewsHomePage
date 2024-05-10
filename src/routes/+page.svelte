@@ -23,7 +23,6 @@
 	}
     .main-container{
         width: 70%;
-        background-color: aqua;
         margin: 30px auto;
         padding: 10px;
 
