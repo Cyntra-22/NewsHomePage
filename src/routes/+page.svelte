@@ -4,7 +4,6 @@
   import MultipleNew from "$lib/MultipleNew.svelte";
   import ThumbNew from "$lib/ThumbNew.svelte";
 
-
 </script>
 <style>
     :root{
@@ -50,6 +49,7 @@
             display: flex;
             margin-top: 30px;
         }
+
     .multiple-new-container{
         padding-left: 20px;
         padding-right: 20px;
@@ -83,8 +83,7 @@
             <ThumbNew/>
         </div>
     </div>
-    
-          
+        
 </body>
     
 
