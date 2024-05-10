@@ -19,9 +19,9 @@
 		 
 	}
     .main-container{
-        width: 80%;
+        width: 70%;
         background-color: aqua;
-        margin: 0 auto;
+        margin: 20px auto;
 
     }
 
