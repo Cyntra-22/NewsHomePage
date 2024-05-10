@@ -22,7 +22,7 @@
 		 
 	}
     .main-container{
-        width: 70%;
+        width: 80%;
         margin: 30px auto;
         padding: 10px;
 
@@ -48,7 +48,15 @@
 
     .body-container2 {
             display: flex;
+            margin-top: 30px;
         }
+    .multiple-new-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: black;
+        color: white;
+        margin-left: 20px;
+    }
 
 </style>
 
@@ -62,7 +70,10 @@
             <div>
                 <New/>
             </div> 
-            <div>
+            <div class="multiple-new-container">
+                <h1>News</h1>
+                <MultipleNew />
+                <MultipleNew />
                 <MultipleNew />
             </div>   
         </div>
