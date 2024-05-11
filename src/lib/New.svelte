@@ -4,25 +4,43 @@
 <style>
     .flex-container{
         display: flex;
+        
     }
     img{
         width: 100%;
     }
+
     .vertical-center{
-        align-items: center;
+        margin-left: 35px;
+        padding-top: 20px;
+    }
+   
+    h1{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 20px;
+        color: var(--text-color);
+        padding-bottom: 17px;
     }
 
     button{
         background-color: var(--button-color);
         color: white;
-        padding: 10px;
+        padding: 10px 25px 10px 25px;
         border: none;
         cursor: pointer;
+        font-size: 15px;
+        letter-spacing: 5px;
+        font-weight: bold;
     }
 
     button:hover{
         color: white;
         background-color: black;
+        
     }
 
     

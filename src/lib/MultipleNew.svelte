@@ -5,6 +5,8 @@
 <style>
     .multple-new-container{
         border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        
     }
 
     h3:hover{

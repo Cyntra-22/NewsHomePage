@@ -86,11 +86,9 @@
                     <MultipleNew />
                 </div>          
             </div>
-              
             <div class="item-3"><ThumbNew/></div>
             <div class="item-4"><ThumbNew/></div>
-            <div class="item-5"><ThumbNew/></div>
-        
+            <div class="item-5"><ThumbNew/></div>  
         </div>
     
             
