@@ -41,6 +41,7 @@
 
     h1{
         color: var(--title-color);
+        font-size: 35px;
     }
 
     .grid-container {
@@ -60,8 +61,8 @@
     }
 
     .item-2{
-        padding: 30px 30px 70px 30px;
-        background-color: black;
+        padding: 30px;
+        background-color: hsl(240, 100%, 5%);
     }
    
 

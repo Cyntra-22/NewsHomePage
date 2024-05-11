@@ -8,10 +8,18 @@
         padding-bottom: 10px;
         
     }
+    h3{
+        font-size: 22px;
+    }
 
     h3:hover{
         color: var(--title-color);
         cursor: pointer;
+        
+    }
+    p{
+        color: hsl(36, 100%, 99%);
+        opacity: 0.7;
     }
 </style>
 
