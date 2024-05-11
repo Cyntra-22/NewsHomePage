@@ -1,5 +1,5 @@
-<script>
-
+<script lang="ts">
+    
 </script>
 <style>
        
@@ -26,14 +26,28 @@
         li a:hover {
         color: var(--button-color);
         }
+        .show-menu{
+            display: none;
+        }
+
+        @media (min-width:300px ) and (max-width: 600px){
+            .hide-menu{
+                display: none;
+            }
+            .show-menu{
+                display: block;
+            }
+        }
 </style>
 
 <div class="nav-container">
-    <ul>
+    
+    <button  class="show-menu">Hello</button>
+    <ul class="hide-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Popular</a></li>
         <li><a href="#about">Trending</a></li>
         <li><a href="#about">Categories</a></li>
     </ul>
-</div>
+</div> 

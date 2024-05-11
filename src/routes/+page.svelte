@@ -112,9 +112,9 @@
                     
                 </div>          
             </div>
-            <div class="item-3"><ThumbNew {newsData} id="01"/></div>
-            <div class="item-4"><ThumbNew {newsData} id="02"/></div>
-            <div class="item-5"><ThumbNew {newsData} id="03"/></div>  
+            <div class="item-3"><ThumbNew /></div>
+            <div class="item-4"><ThumbNew /></div>
+            <div class="item-5"><ThumbNew /></div>  
         </div>
     
             

@@ -1,9 +1,5 @@
 <script lang="ts">
-    export let newsData:{id:string, title:string, description:string, image:string}[];
-    export let id:string;
-
-     $: News = $newsData.filter(news => news.id === id) as { id: string, title: string, description: string, image: string }[];
-
+   
 </script>
 <style>
     .thumb-new-container{
@@ -33,17 +29,15 @@
    
 
 </style>
-{#each News as news}
     <div class="thumb-new-container">
         <div>
-            <img src={news.image} alt={news.title}/>
+            <img src="/image-gaming-growth.jpg" alt="new titlle"/>
         </div>
         <div class="news-content">
             <div>
-                <h1>{news.id}</h1>
-                <h2>{news.title}</h2>
-                <p>{news.description}</p>
+                <h1>01</h1>
+                <h2>hh</h2>
+                <p>pp</p>
             </div>
         </div>
     </div>
-{/each}
