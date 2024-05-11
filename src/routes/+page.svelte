@@ -1,8 +1,31 @@
-<script>
+<script lang="ts">
   import Navigation from "$lib/Navigation.svelte";
   import New from "$lib/New.svelte";
   import MultipleNew from "$lib/MultipleNew.svelte";
   import ThumbNew from "$lib/ThumbNew.svelte";
+  import { writable } from 'svelte/store';
+
+  const newsData = writable([
+    { 
+      id: "01",
+      title: "Reviving Retro PCs", 
+      description: "What happens when old PCs are given modern upgrades?", 
+      image: "/image-gaming-growth.jpg"
+    },
+    { 
+      id: "02",
+      title: "Reviving Retro PCs", 
+      description: "What happens when old PCs are given modern upgrades?", 
+      image: "/image-gaming-growth.jpg"
+    },
+    { 
+      id: "03",
+      title: "Reviving Retro PCs", 
+      description: "What happens when old PCs are given modern upgrades?", 
+      image: "/image-gaming-growth.jpg"
+    },
+      
+  ]);
 
 </script>
 <style>
@@ -89,9 +112,9 @@
                     
                 </div>          
             </div>
-            <div class="item-3"><ThumbNew/></div>
-            <div class="item-4"><ThumbNew/></div>
-            <div class="item-5"><ThumbNew/></div>  
+            <div class="item-3"><ThumbNew {newsData} id="01"/></div>
+            <div class="item-4"><ThumbNew {newsData} id="02"/></div>
+            <div class="item-5"><ThumbNew {newsData} id="03"/></div>  
         </div>
     
             

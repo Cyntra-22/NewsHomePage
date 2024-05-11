@@ -1,4 +1,8 @@
-<script>
+<script lang="ts">
+    export let newsData:{id:string, title:string, description:string, image:string}[];
+    export let id:string;
+
+     $: News = $newsData.filter(news => news.id === id) as { id: string, title: string, description: string, image: string }[];
 
 </script>
 <style>
@@ -29,15 +33,17 @@
    
 
 </style>
-<div class="thumb-new-container">
-    <div>
-        <img src="/image-gaming-growth.jpg" alt="new title"/>
-    </div>
-    <div class="news-content">
+{#each News as news}
+    <div class="thumb-new-container">
         <div>
-            <h1>01</h1>
-            <h2>Reviving Retro PCs</h2>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <img src={news.image} alt={news.title}/>
+        </div>
+        <div class="news-content">
+            <div>
+                <h1>{news.id}</h1>
+                <h2>{news.title}</h2>
+                <p>{news.description}</p>
+            </div>
         </div>
     </div>
-</div>
+{/each}
