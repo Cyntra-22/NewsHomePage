@@ -20,6 +20,11 @@
         cursor: pointer;
     }
 
+    button:hover{
+        color: white;
+        background-color: black;
+    }
+
     
 </style>
 

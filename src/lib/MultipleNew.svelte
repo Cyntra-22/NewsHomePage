@@ -6,6 +6,11 @@
     .multple-new-container{
         border-bottom: 1px solid white;
     }
+
+    h3:hover{
+        color: var(--title-color);
+        cursor: pointer;
+    }
 </style>
 
 <div class="multple-new-container">

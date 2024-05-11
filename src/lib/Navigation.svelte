@@ -20,11 +20,11 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        cursor: pointer;
         }
 
         li a:hover {
-        background-color: #111;
-        color: white;
+        color: var(--button-color);
         }
 </style>
 

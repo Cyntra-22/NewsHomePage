@@ -4,7 +4,7 @@
 <style>
     .thumb-new-container{
         display: flex;
-        padding: 10px;
+        
     }
     h1{
         color: var(--font-color);
@@ -15,6 +15,7 @@
     .news-content{
         padding: 10px;
     }
+   
 
 </style>
 <div class="thumb-new-container">

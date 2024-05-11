@@ -10,7 +10,8 @@
 		--font-color: hsl(233, 8%, 79%);
         --text-color: hsl(236, 13%, 42%);
 		--font: 'Inter', sans-serif;
-        --button-color: hsl(35, 77%, 62%);
+        --title-color: hsl(35, 77%, 62%);
+        --button-color: hsl(5, 85%, 63%);
 		
 	}
 
@@ -32,31 +33,36 @@
         justify-content: space-between;
     }
 
-    .body-container {
-            display: flex;
-            margin-top: 20px;
-        }
-
-    .body-container > div {
-            flex: 1; 
-        }
-
-    .body-container > div:nth-child(1) {
-            flex: 2; 
-        }
-
-    .body-container2 {
-            display: flex;
-            margin-top: 30px;
-        }
-
     .multiple-new-container{
-        padding-left: 20px;
-        padding-right: 20px;
         background-color: black;
         color: white;
-        margin-left: 20px;
+        
     }
+
+    h1{
+        color: var(--title-color);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-container >div{
+        padding: 0;
+    }
+
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .item-2{
+        padding: 20px;
+    }
+   
 
 </style>
 
@@ -66,24 +72,33 @@
             <img src="/logo.svg" alt="logo"/>
             <Navigation/>
         </div>
-        <div class="body-container">
-            <div>
+
+        <div class="grid-container">
+            <div class="item-1">
                 <New/>
-            </div> 
+            </div>
+            
             <div class="multiple-new-container">
-                <h1>News</h1>
-                <MultipleNew />
-                <MultipleNew />
-                <MultipleNew />
-            </div>   
+                <div class="item-2" >
+                    <h1>News</h1>
+                    <MultipleNew />
+                    <MultipleNew />
+                    <MultipleNew />
+                </div>          
+            </div>
+              
+            <div class="item-3"><ThumbNew/></div>
+            <div class="item-4"><ThumbNew/></div>
+            <div class="item-5"><ThumbNew/></div>
+        
         </div>
-        <div class="body-container2">
-            <ThumbNew />
-            <ThumbNew/>
-            <ThumbNew/>
-        </div>
+    
+            
     </div>
+   
         
 </body>
     
+
+
 
