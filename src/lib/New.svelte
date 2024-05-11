@@ -16,14 +16,17 @@
     }
    
     h1{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 900;
+        line-height: 1.1;
     }
 
     p{
-        font-size: 20px;
+        font-size: 17px;
         color: var(--text-color);
-        padding-bottom: 17px;
+        padding-bottom: 20px;
+        line-height: 1.5;
+        padding-right: 10px;
     }
 
     button{

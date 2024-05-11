@@ -4,7 +4,7 @@
 <style>
     .thumb-new-container{
         display: flex;
-        margin-top: 30px;
+        margin-top: 25px;
         
     }
     h1{

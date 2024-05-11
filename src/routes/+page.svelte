@@ -34,7 +34,7 @@
     }
 
     .multiple-new-container{
-        background-color: black;
+        
         color: white;
         
     }
@@ -60,7 +60,8 @@
     }
 
     .item-2{
-        padding: 20px;
+        padding: 30px 30px 70px 30px;
+        background-color: black;
     }
    
 
@@ -84,6 +85,7 @@
                     <MultipleNew />
                     <MultipleNew />
                     <MultipleNew />
+                    
                 </div>          
             </div>
             <div class="item-3"><ThumbNew/></div>
