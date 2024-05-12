@@ -1,5 +1,7 @@
 <script lang="ts">
-   
+  import type { Item } from "./types";
+
+    export let item: Item;
 </script>
 <style>
     .thumb-new-container{
@@ -31,13 +33,13 @@
 </style>
     <div class="thumb-new-container">
         <div>
-            <img src="/image-gaming-growth.jpg" alt="new titlle"/>
+            <img src={item.imageUrl} alt={item.title}/>
         </div>
         <div class="news-content">
             <div>
-                <h1>01</h1>
-                <h2>hh</h2>
-                <p>pp</p>
+                <h1>{item.id}</h1>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
             </div>
         </div>
     </div>

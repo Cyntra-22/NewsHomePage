@@ -2,34 +2,12 @@
   import New from "$lib/New.svelte";
   import MultipleNew from "$lib/MultipleNew.svelte";
   import ThumbNew from "$lib/ThumbNew.svelte";
-  import { writable } from 'svelte/store';
+  import {items} from "$lib/data";
+  import type {Item} from "$lib/types";
 
-  const newsData = writable([
-    { 
-      id: "01",
-      title: "Reviving Retro PCs", 
-      description: "What happens when old PCs are given modern upgrades?", 
-      image: "/image-retro-pcs"
-    },
-    { 
-      id: "02",
-      title: "Top 10 Laptops of 2022", 
-      description: "Our best picks for various needs and budgets. ", 
-      image: "/image-top-laptops"
-    },
-    { 
-      id: "03",
-      title: "The Growth of Gaming", 
-      description: "How the pandemic has sparked fresh opportunities.", 
-      image: "/static/image-gaming-growth.jpg"
-    },
-      
-  ]);
-
+  const myItems: Item[] = items;
 </script>
 <style>
-    
-   
 
     .multiple-new-container{
         
@@ -80,9 +58,9 @@
                     
                 </div>          
             </div>
-            <div class="item-3"><ThumbNew /></div>
-            <div class="item-4"><ThumbNew /></div>
-            <div class="item-5"><ThumbNew /></div>  
+            {#each myItems as item(item.id)}
+              <ThumbNew {item} />
+            {/each}
 </div>
     
             
