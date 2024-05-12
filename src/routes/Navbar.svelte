@@ -1,5 +1,5 @@
 <script>
-    
+
 </script>
 
 <style>
@@ -45,9 +45,7 @@
             cursor: pointer;
             padding-top: 15px;
         }
-        .active{
-            color: var(--button-color);
-        }
+       
 
         @media (min-width:300px ) and (max-width: 600px){
             .hide-menu{
