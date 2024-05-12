@@ -1,5 +1,7 @@
 <script>
-
+    function showNav(){
+        alert("hi");
+    }
 </script>
 
 <style>
@@ -45,15 +47,17 @@
             cursor: pointer;
             padding-top: 15px;
         }
-       
+        
 
         @media (min-width:300px ) and (max-width: 600px){
-            .hide-menu{
-                display: none;
-            }
+           
             .show-menu{
                 display: block;
             }
+           ul{
+            display: none;
+           }
+        
         }
 </style>
 
@@ -63,14 +67,15 @@
             <img src="/logo.svg" alt="logo"/>
         </div>
         <div>
-            <button class="show-menu"><img src="/icon-menu.svg" alt="nav icon"></button>
-            <ul class="hide-menu">
-                <li><a href="/" >Home</a></li>
-                <li><a href="/newnav" >News</a></li>
-                <li><a href="/popular" >Popular</a></li>
-                <li><a href="/trending" >Trending</a></li>
-                <li><a href="/categories" >Categories</a></li>
-            </ul>   
+            <button class="show-menu"  on:click={showNav} ><img src="/icon-menu.svg" alt="nav icon"></button>
+                <ul >
+                    <li><a href="/" >Home</a></li>
+                    <li><a href="/newnav" >News</a></li>
+                    <li><a href="/popular" >Popular</a></li>
+                    <li><a href="/trending" >Trending</a></li>
+                    <li><a href="/categories" >Categories</a></li>
+                </ul> 
+            
         </div>  
     </div>
 </div>
