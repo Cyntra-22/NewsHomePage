@@ -48,28 +48,57 @@
     border-bottom: 1px solid white;
 }
 
+    .display-inline{
+      display: flex;
+    }
+ @media (min-width: 300px) and (max-width: 768px ){
+  
+    .grid-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .item-1,
+  .item-2 {
+    grid-column-start: auto; 
+    grid-column-end: auto; 
+  }
+
+    .display-inline{
+      display: block;
+    }
+    }
+
+
+
 </style>
 
 <div class="grid-container">
-            <div class="item-1">
-                <New/>
-            </div>
+    <div class="item-1">
+        <New/>
+    </div>
             
-            <div class="multiple-new-container">
-                <div class="item-2" >
-                    <h1>News</h1>
-                    {#each myNewItems as newitem, index (newitem.newId)}
-                      <div class="{index === myNewItems.length - 1 ? '' : 'bottom-border'}">
-                        <MultipleNew {newitem} />
-                      </div>
-                    {/each}
-                    
-                </div>          
-            </div>
-            {#each myItems as item(item.id)}
-              <ThumbNew {item} />
+    <div class="multiple-new-container">
+        <div class="item-2" >
+            <h1>News</h1>
+            {#each myNewItems as newitem, index (newitem.newId)}
+                <div class="{index === myNewItems.length - 1 ? '' : 'bottom-border'}">
+                    <MultipleNew {newitem} />
+                </div>
             {/each}
+                    
+        </div>          
+      </div>
 </div>
+<div class="display-inline">
+  {#each myItems as item(item.id)}
+    <div>
+      <ThumbNew {item} />
+    </div>        
+  {/each}
+</div>
+
+            
+
     
             
 

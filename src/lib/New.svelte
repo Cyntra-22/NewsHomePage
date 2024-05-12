@@ -1,5 +1,12 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
+    let right_image = "/image-web-3-desktop.jpg";
 
+	onMount(() =>{
+		if(window.innerWidth < 1080) {
+			right_image = "/image-web-3-mobile.jpg";
+		}
+	});
 </script>
 <style>
     .flex-container{
@@ -46,12 +53,28 @@
         
     }
 
+     @media (min-width: 300px) and (max-width: 768px ){
+        .flex-container{
+            display: block;
+        }
+        h1{
+            font-size: 40px;
+        }
+        .vertical-center{
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+        p{
+            padding-bottom: 10px;
+        }
+     }
+
     
 </style>
 
 <div>
     <div>
-        <img src="/image-web-3-desktop.jpg" alt="new page"/>
+        <img src={right_image} alt="new page"/>
         <div class="flex-container">
             <div>
                 <h1>The Bright Future of Web 3.0?</h1>
