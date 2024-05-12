@@ -1,73 +1,33 @@
+<script lang="ts">
+    import Navbar from "./Navbar.svelte";
+</script>
 <style>
-    .nav-container{
+    :root{
+		--font-color: hsl(233, 8%, 79%);
+        --text-color: hsl(236, 13%, 42%);
+		--font: 'Inter', sans-serif;
+        --title-color: hsl(35, 77%, 62%);
+        --button-color: hsl(5, 85%, 63%);
+		
+	}
+
+	:global(body){
+		
+		margin: 0 auto;
+		font-family: var(--font); 
+		 
+	}
+     .main-container{
         width: 80%;
         margin: 30px auto;
         padding: 10px;
+
     }
-        .header{
-        display: flex;
-        justify-content: space-between;
-    }
-       
-        ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        }
-
-        li {
-        float: left;
-        }
-
-        li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        cursor: pointer;
-        }
-
-        li a:hover {
-        color: var(--button-color);
-        }
-        .show-menu{
-            display: none;
-        }
-        button{
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            padding-top: 15px;
-        }
-
-        @media (min-width:300px ) and (max-width: 600px){
-            .hide-menu{
-                display: none;
-            }
-            .show-menu{
-                display: block;
-            }
-        }
 </style>
+<Navbar/>
+<body>
+    <div class="main-container">
+        <slot/>
+    </div>  
+</body>
 
-<div class="nav-container">  
-    <div class="header">
-        <div>
-            <img src="/logo.svg" alt="logo"/>
-        </div>
-        <div>
-            <button class="show-menu"><img src="/icon-menu.svg" alt="nav icon"></button>
-            <ul class="hide-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/newnav">News</a></li>
-                <li><a href="/popular">Popular</a></li>
-                <li><a href="/trending">Trending</a></li>
-                <li><a href="/categories">Categories</a></li>
-            </ul>   
-        </div>  
-    </div>
-</div>
-
-<slot/>

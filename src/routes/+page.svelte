@@ -28,27 +28,8 @@
 
 </script>
 <style>
-    :root{
-		--font-color: hsl(233, 8%, 79%);
-        --text-color: hsl(236, 13%, 42%);
-		--font: 'Inter', sans-serif;
-        --title-color: hsl(35, 77%, 62%);
-        --button-color: hsl(5, 85%, 63%);
-		
-	}
-
-	:global(body){
-		
-		margin: 0 auto;
-		font-family: var(--font); 
-		 
-	}
-    .main-container{
-        width: 80%;
-        margin: 30px auto;
-        padding: 10px;
-
-    }
+    
+   
 
     .multiple-new-container{
         
@@ -85,9 +66,7 @@
 
 </style>
 
-<body>
-    <div class="main-container">
-        <div class="grid-container">
+<div class="grid-container">
             <div class="item-1">
                 <New/>
             </div>
@@ -104,13 +83,15 @@
             <div class="item-3"><ThumbNew /></div>
             <div class="item-4"><ThumbNew /></div>
             <div class="item-5"><ThumbNew /></div>  
-        </div>
+</div>
     
             
-    </div>
+
    
-        
-</body>
+
+
+
+
 
 
     
