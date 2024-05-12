@@ -4,3 +4,9 @@ export interface Item {
   description: string;
   imageUrl: string;
 }
+
+export interface Item2{
+    newId: number;
+    newTitle: string;
+    newDescription: string;
+}

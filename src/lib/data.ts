@@ -1,4 +1,5 @@
 import type {Item}   from '$lib/types';
+import type { Item2 } from '$lib/types';
 
 export const items: Item[] = [
 
@@ -22,3 +23,27 @@ export const items: Item[] = [
 },
 
 ];
+
+export const newitems: Item2[] = [
+
+{ 
+    newId: 1,
+    newTitle: "Hydrogen VS Electric Cars", 
+    newDescription: "Will hydrogen-fueled cars ever catch up to EVs?", 
+  },
+  { 
+    newId: 2,
+    newTitle: "The Downsides of AI Artistry", 
+    newDescription: "What are the possible adverse effects of on-demand AI image generation?", 
+    
+  },
+  { 
+    newId: 3,
+    newTitle: "Is VC Funding Drying Up?", 
+    newDescription: "Private funding by VC firms is down 50% YOY. We take a look at what that means. ", 
+    
+  },
+
+];
+
+
