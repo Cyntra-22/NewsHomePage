@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Navigation from "$lib/Navigation.svelte";
   import New from "$lib/New.svelte";
   import MultipleNew from "$lib/MultipleNew.svelte";
   import ThumbNew from "$lib/ThumbNew.svelte";
@@ -10,19 +9,19 @@
       id: "01",
       title: "Reviving Retro PCs", 
       description: "What happens when old PCs are given modern upgrades?", 
-      image: "/image-gaming-growth.jpg"
+      image: "/image-retro-pcs"
     },
     { 
       id: "02",
-      title: "Reviving Retro PCs", 
-      description: "What happens when old PCs are given modern upgrades?", 
-      image: "/image-gaming-growth.jpg"
+      title: "Top 10 Laptops of 2022", 
+      description: "Our best picks for various needs and budgets. ", 
+      image: "/image-top-laptops"
     },
     { 
       id: "03",
-      title: "Reviving Retro PCs", 
-      description: "What happens when old PCs are given modern upgrades?", 
-      image: "/image-gaming-growth.jpg"
+      title: "The Growth of Gaming", 
+      description: "How the pandemic has sparked fresh opportunities.", 
+      image: "/static/image-gaming-growth.jpg"
     },
       
   ]);
@@ -51,11 +50,6 @@
 
     }
 
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-
     .multiple-new-container{
         
         color: white;
@@ -71,7 +65,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 20px;
-        margin-top: 20px;
+       
     }
 
     .grid-container >div{
@@ -93,11 +87,6 @@
 
 <body>
     <div class="main-container">
-        <div class="header">
-            <img src="/logo.svg" alt="logo"/>
-            <Navigation/>
-        </div>
-
         <div class="grid-container">
             <div class="item-1">
                 <New/>
@@ -122,6 +111,8 @@
    
         
 </body>
+
+
     
 
 
