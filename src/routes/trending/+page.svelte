@@ -34,6 +34,19 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media (min-width: 300px) and (max-width: 768px ){
+        .trending-container{
+            display:block;
+        }
+        img{
+            width: 100%;
+        }
+        .new-container{
+            display: block;
+        }
+
+    }
     
 </style>
 
