@@ -19,6 +19,12 @@
     .img-container{
         margin-right: 20px;
     }
+
+    @media (min-width: 300px) and (max-width: 768px ){
+        .new-container{
+            display: block;
+        }
+    }
     
 </style>
 

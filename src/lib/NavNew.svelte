@@ -22,6 +22,20 @@
         background-color: black;
         
     }
+
+    p{
+        text-align: justify;
+    }
+
+     @media (min-width: 300px) and (max-width: 768px ){
+        .container{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    
 </style>
 
 <div class="container">
