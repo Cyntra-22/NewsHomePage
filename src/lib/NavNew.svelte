@@ -1,11 +1,12 @@
 <style>
     img{
-        width: 400px;
+        width: 100%;
         height: 400px;
     }
     .container{
         width: 400px;
         margin-bottom: 20px;
+        
     }
     button{
         background-color: var(--button-color);
@@ -15,6 +16,7 @@
         cursor: pointer;
         font-size: 15px;
         font-weight: bold;
+        
     }
 
     button:hover{
@@ -25,7 +27,9 @@
 
     p{
         text-align: justify;
+       
     }
+   
 
      @media (min-width: 300px) and (max-width: 768px ){
         .container{
