@@ -1,7 +1,5 @@
 <script>
-    function showNav(){
-        alert("hi");
-    }
+    
 </script>
 
 <style>
@@ -67,15 +65,14 @@
             <img src="/logo.svg" alt="logo"/>
         </div>
         <div>
-            <button class="show-menu"  on:click={showNav} ><img src="/icon-menu.svg" alt="nav icon"></button>
+            <button class="show-menu" ><img src="/icon-menu.svg" alt="nav icon"></button>
                 <ul >
-                    <li><a href="/" >Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/newnav" >News</a></li>
                     <li><a href="/popular" >Popular</a></li>
                     <li><a href="/trending" >Trending</a></li>
                     <li><a href="/categories" >Categories</a></li>
-                </ul> 
-            
+                </ul>          
         </div>  
     </div>
 </div>

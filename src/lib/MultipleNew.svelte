@@ -1,7 +1,6 @@
 <script lang="ts">
     
     import type { Item2 } from "./types";
-
     export let newitem: Item2;
     
 </script>

@@ -1,13 +1,11 @@
 <script lang="ts">
   import type { Item } from "./types";
-
-    export let item: Item;
+  export let item: Item;
 </script>
 <style>
     .thumb-new-container{
         display: flex;
-        margin-top: 15px;
-        
+       
     }
     h1{
         color: var(--font-color);
@@ -27,8 +25,6 @@
         padding: 20px;
     }
 
-   
-   
 
 </style>
     <div class="thumb-new-container">
