@@ -18,11 +18,13 @@
     img {
         width: 225px;
         height: 450px;
+        cursor: pointer;
     }
     
     a {
         text-decoration: none;
         color: black;
+        cursor: pointer;
     }
     
     .img-container:hover {
