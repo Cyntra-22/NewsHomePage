@@ -1,7 +1,7 @@
 <style>
     img{
         width: 400px;
-        height: 300px;
+        height: 400px;
     }
     .container{
         width: 400px;
