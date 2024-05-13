@@ -7,6 +7,21 @@
         width: 400px;
         margin-bottom: 20px;
     }
+    button{
+        background-color: var(--button-color);
+        color: white;
+        padding: 10px 25px 10px 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    button:hover{
+        color: white;
+        background-color: black;
+        
+    }
 </style>
 
 <div class="container">

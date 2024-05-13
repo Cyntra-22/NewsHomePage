@@ -19,6 +19,7 @@
     .img-container{
         margin-right: 20px;
     }
+    
 </style>
 
 <div class="new-container">
