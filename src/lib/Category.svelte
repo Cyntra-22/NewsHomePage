@@ -6,6 +6,7 @@
      img{
         width: 25%;  
         margin-right: 30px;
+        object-fit: cover
     }
     h3{
         padding-top: 15px;
