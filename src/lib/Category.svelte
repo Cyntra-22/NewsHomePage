@@ -17,6 +17,14 @@
     a:hover{
         color: var(--button-color);
     }
+     @media (min-width: 300px) and (max-width: 768px ){
+        img{
+            width: 30%;
+        }
+        h3{
+            padding-top: 0;
+        }
+     }
   
 </style>
 

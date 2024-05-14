@@ -10,7 +10,7 @@
     }
     a{
         text-decoration: none;
-        color: var(--button-color);
+        color: black;
     }
     li{
         list-style-type: none;
@@ -26,7 +26,23 @@
     }
 
     a:hover{
-        color: black;
+        color: var(--button-color);
+    }
+    .item-display{
+        display: flex;
+    }
+
+    @media (min-width: 300px) and (max-width: 768px ){
+        .item-display{
+            display: block;
+        }
+         .list-container{
+            display: block;
+         }
+         li{
+            list-style-type:square;
+            
+         }
     }
 
    
@@ -35,11 +51,11 @@
 <div>
     <h1>CATEGORIES</h1>
     <div class="list-container">
-         <li><a href="#content-policy">Content Policy</a></li> |
-        <li><a href="#freedom-of-expression">Freedom of Expression</a></li> |
-        <li><a href="#human-right">Human Right</a></li> |
-        <li><a href="#legal-and-regulatory">Legal and Regulatory</a></li> |
-        <li><a href="#socioculture">Socioculture</a></li> |
+        <li><a href="#content-policy">Content Policy</a></li> 
+        <li><a href="#freedom-of-expression">Freedom of Expression</a></li> 
+        <li><a href="#human-right">Human Right</a></li> 
+        <li><a href="#legal-and-regulatory">Legal and Regulatory</a></li> 
+        <li><a href="#socioculture">Socioculture</a></li> 
         <li><a href="#laws-business">Laws and Business</a></li> 
     </div>
     <div>
@@ -52,11 +68,11 @@
    
     <div id="content-policy">
         <h2>Content Policy</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
@@ -64,11 +80,11 @@
     <hr/>
      <div id="freedom-of-expression">
         <h2>Freedom of Expression</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
@@ -76,11 +92,11 @@
     <hr/>
      <div id="human-right">
         <h2>Human Right</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
@@ -88,11 +104,11 @@
     <hr/>
      <div id="legal-and-regulatory">
         <h2>Legal and Regulatory</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
@@ -100,11 +116,11 @@
     <hr/>
      <div id="socioculture">
         <h2>Socioculture</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
@@ -112,11 +128,11 @@
     <hr/>
     <div id="laws-business">
         <h2>Laws and Business</h2>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
-        <div style="display:flex;">
+        <div class="item-display">
             <Category/>
             <Category/>
         </div>
