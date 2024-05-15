@@ -25,6 +25,11 @@
         padding: 20px;
     }
 
+    @media (min-width: 300px) and (max-width: 768px ){
+        .thumb-new-container{
+            padding-top: 20px;
+        }
+    }
 
 </style>
     <div class="thumb-new-container">
