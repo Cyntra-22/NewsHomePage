@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { Item } from "./types";
   export let item: Item;
+
+  console.log("Props passed to New component:", item);
 </script>
 <style>
     .thumb-new-container{

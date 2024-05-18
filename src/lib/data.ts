@@ -1,5 +1,4 @@
-import type {Item}   from '$lib/types';
-import type { Item2 } from '$lib/types';
+import type { Item, Item2 } from '$lib/types';
 
 export const items: Item[] = [
 

@@ -1,4 +1,4 @@
-<script>
+<script script lang="ts">
     import NavNew from "$lib/NavNew.svelte"; 
 </script>
 <style> 

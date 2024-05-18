@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Category from "./Category.svelte";
     import NavNew from "./NavNew.svelte";
 </script>

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import type { newitems } from "./data";
+
     
     import type { Item2 } from "./types";
     export let newitem: Item2;

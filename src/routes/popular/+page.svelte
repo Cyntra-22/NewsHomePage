@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Popular from "$lib/Popular.svelte";
 </script>
 <style>

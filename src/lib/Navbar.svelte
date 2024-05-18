@@ -1,4 +1,4 @@
-<!--<script>
+<script>
     import {page} from "$app/stores";
     console.log(page);
 </script>
@@ -90,13 +90,14 @@
         
     </div>
 </div> 
--->
 
-<script>
+
+<!--
+
+<script lang="ts">
     import { page } from "$app/stores";
     import { writable } from "svelte/store";
-
-   
+  
     const isMobileMenuOpen = writable(false);
 
     function toggleMobileMenu() {
@@ -201,3 +202,5 @@
         </div>
     </div>
 </div>
+
+-->
