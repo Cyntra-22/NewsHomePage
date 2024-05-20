@@ -1,8 +1,5 @@
 <script lang="ts">
-  import type { newitems } from "./data";
-
-    
-    import type { Item2 } from "./types";
+    import type { Item2 } from "$lib/types";
     export let newitem: Item2;
     
 </script>

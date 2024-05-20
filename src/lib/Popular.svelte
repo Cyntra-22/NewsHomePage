@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Category from "./Category.svelte";
-    import NavNew from "./NavNew.svelte";
+    import Category from "$lib/Category.svelte";
+    import NavNew from "$lib/NavNew.svelte";
 </script>
 <style>
     .popular-display{

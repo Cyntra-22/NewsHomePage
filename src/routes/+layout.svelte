@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Navbar from "../lib/Navbar.svelte";
+    import Navbar from "$lib/Navbar.svelte";
 </script>
 <style>
     :root{
@@ -25,9 +25,8 @@
     }
 </style>
 <Navbar/>
-<body>
-    <div class="main-container">
+<div class="main-container">
         <slot/>
-    </div>  
-</body>
+</div>  
+
 

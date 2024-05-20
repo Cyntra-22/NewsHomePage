@@ -2,6 +2,7 @@
   import New from "$lib/New.svelte";
   import MultipleNew from "$lib/MultipleNew.svelte";
   import ThumbNew from "$lib/ThumbNew.svelte";
+
   import {items} from "$lib/data";
   import {newitems} from "$lib/data";
   import type {Item} from "$lib/types";
@@ -12,10 +13,8 @@
 </script>
 <style>
 
-    .multiple-new-container{
-        
+    .multiple-new-container{    
         color: white;
-        
     }
 
     h1{
@@ -82,13 +81,12 @@
                 <div class="{index === myNewItems.length - 1 ? '' : 'bottom-border'}">
                     <MultipleNew {newitem} />
                 </div>
-            {/each}
-                    
+            {/each}                    
         </div>          
       </div>
 </div>
 <div class="display-inline">
-  {#each myItems as item(item.id)}
+  {#each myItems as item}
     <div>
       <ThumbNew {item} />
     </div>        
