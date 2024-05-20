@@ -1,6 +1,8 @@
 <script lang="ts">
     import {page} from "$app/stores";
-    console.log(page);
+
+    $: routeId = $page.route.id;
+    
 </script>
 
 <style>
@@ -48,6 +50,10 @@
         .mobile-nav{
             display: none;
         }
+
+        .active{
+            color: var(--button-color);
+        }
         
         @media (min-width:300px ) and (max-width: 600px){
            
@@ -70,11 +76,11 @@
         </div>
         <div class="desktop-nav">
                 <ul >
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/newnav" >News</a></li>
-                    <li><a href="/popular" >Popular</a></li>
-                    <li><a href="/trending" >Trending</a></li>
-                    <li><a href="/categories" >Categories</a></li>
+                    <li><a class:active = {routeId ==="/"} href="/">Home</a></li>
+                    <li><a class:active = {routeId ==="/about"} href="/newnav" >News</a></li>
+                    <li><a class:active = {routeId ==="/popular"} href="/popular" >Popular</a></li>
+                    <li><a class:active = {routeId ==="/trending"} href="/trending" >Trending</a></li>
+                    <li><a class:active = {routeId ==="/categories"} href="/categories" >Categories</a></li>
                 </ul>          
         </div> 
         <div class="mobile-nav">
