@@ -19,6 +19,7 @@
         width: 225px;
         height: 450px;
         cursor: pointer;
+        object-fit: cover;
     }
     
     a {
@@ -39,9 +40,10 @@
         .trending-container{
             display:block;
         }
-        img{
-            width: 100%;
-        }
+        img {
+        width: 100%;
+        height: 200px;
+    }
         .new-container{
             display: block;
         }
@@ -52,7 +54,7 @@
 
 <div class="trending-container">
     <div class="img-container">
-        <img src="/image-retro-pcs.jpg" alt="new title"/>
+        <img src="/image-top-laptops.jpg" alt="new title"/>
         <a href="/"><h3>Reviving Retro PCs</h3></a>
     </div>
      <div class="img-container">
@@ -64,11 +66,11 @@
         <a href="/"><h3>Reviving Retro PCs</h3></a>
     </div>
      <div class="img-container">
-        <img src="/image-gaming-growth.jpg" alt="new title"/>
+        <img src="/image-top-laptops.jpg" alt="laptop">
         <a href="/"><h3>Reviving Retro PCs</h3></a>
     </div>
      <div class="img-container">
-        <img src="/image-retro-pcs.jpg" alt="new title"/>
+        <img src="/image-gaming-growth.jpg" alt="new title"/>
         <a href="/"><h3>Reviving Retro PCs</h3></a>
     </div> 
    

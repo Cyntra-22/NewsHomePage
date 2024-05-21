@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ThumbNew from "$lib/ThumbNew.svelte";
+    import ThumbNew1 from "$lib/ThumbNew1.svelte";
     import NavNew from "$lib/NavNew.svelte";
     import type {Item} from "$lib/types";
     import {items} from "$lib/data";
@@ -47,12 +47,12 @@
     <div>
         {#each navNews as item(item.id)}
             <div>
-            <ThumbNew {item} />
+            <ThumbNew1 {item} />
             </div>        
         {/each}
         {#each navNews as item(item.id)}
             <div>
-            <ThumbNew {item} />
+            <ThumbNew1 {item} />
             </div>        
         {/each} 
     </div>
