@@ -48,7 +48,12 @@
 
     .display-inline{
       display: flex;
+      justify-content: space-between;
     }
+    .display-inline > div{
+      flex: 1;
+    }
+    
  @media (min-width: 300px) and (max-width: 768px ){
   
     .grid-container {

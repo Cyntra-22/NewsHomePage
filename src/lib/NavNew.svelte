@@ -1,13 +1,21 @@
 <style>
     img{
         width: 100%;
-        height: 400px;
+        height: auto;
+        max-height: 200px; 
+        object-fit: cover;
+        
     }
     .container{
-        width: 400px;
         margin-bottom: 20px;
         
     }
+
+    .content-container{
+        width: 98%;
+    }
+
+   
     button{
         background-color: var(--button-color);
         color: white;
@@ -43,8 +51,10 @@
 </style>
 
 <div class="container">
-    <img src="/image-top-laptops.jpg" alt="new title"/>
-    <h1>Rebuilding the pipeline for local news</h1>
-    <p>We work toward this goal every day with emerging journalists through our Report for America program, but the urgency of this moment means we need to widen the circle.</p>
-    <button>See More</button>
+    <div class="content-container">
+        <img src="/image-top-laptops.jpg" alt="new title"/>
+        <h1>Rebuilding the pipeline for local news</h1>
+        <p>We work toward this goal every day with emerging journalists through our Report for America program, but the urgency of this moment means we need to widen the circle.</p>
+        <button>See More</button>
+    </div>
 </div>
